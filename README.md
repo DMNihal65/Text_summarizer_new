@@ -16,3 +16,4 @@ To set up the text summarizer on your local machine, follow these steps:
 Clone the repository to your local machine: 🖥️
 '''shell 
 git clone https://github.com/your-username/text-summarizer.git
+'''
