@@ -39,6 +39,9 @@ pip install -r requirements.txt
    python -c "from transformers import PegasusTokenizer, PegasusForConditionalGeneration; PegasusTokenizer.from_pretrained('google/pegasus-xsum'); PegasusForConditionalGeneration.from_pretrained('google/pegasus-xsum')"
 
 
+
+
+
 # Deployment with AWS CI/CD
 This project utilizes AWS CI/CD for automated deployment using GitHub Actions. The CI/CD pipeline is configured to trigger a deployment on every push to the main branch.
 
