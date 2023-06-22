@@ -19,19 +19,25 @@ To set up the text summarizer on your local machine, follow these steps:
    ```shell
    git clone https://github.com/your-username/text-summarizer.git
 2. Navigate to the project directory:
-  '''shell
-   cd text-summarizer
-3. Install the required dependencies. It is recommended to use a virtual environment:
-   '''shell
-   # Create a virtual environment (optional but recommended)
-    python3 -m venv venv
-    source venv/bin/activate
 
-   # Install the dependencies
-    pip install -r requirements.txt
+   ```shell
+   cd text-summarizer
+
+   
+3. Install the required dependencies. It is recommended to use a virtual environment:
+  
+  ```shell
+   # Create a virtual environment (optional but recommended)
+python3 -m venv venv
+source venv/bin/activate
+
+# Install the dependencies
+pip install -r requirements.txt
+
 4.Download the Pegasus transformer model. You can use the Hugging Face library to download the model:
-    '''shell
+```shell
    python -c "from transformers import PegasusTokenizer, PegasusForConditionalGeneration; PegasusTokenizer.from_pretrained('google/pegasus-xsum'); PegasusForConditionalGeneration.from_pretrained('google/pegasus-xsum')"
+
 
 # Deployment with AWS CI/CD
 This project utilizes AWS CI/CD for automated deployment using GitHub Actions. The CI/CD pipeline is configured to trigger a deployment on every push to the main branch.
