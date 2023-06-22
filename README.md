@@ -27,16 +27,19 @@ To set up the text summarizer on your local machine, follow these steps:
 3. Install the required dependencies. It is recommended to use a virtual environment:
   
   ```shell
-   # Create a virtual environment (optional but recommended)
+   Create a virtual environment (optional but recommended)
    python3 -m venv venv
    source venv/bin/activate
 
-   # Install the dependencies
+   '''shell
+   Install the dependencies
    pip install -r requirements.txt
 
 4.Download the Pegasus transformer model. You can use the Hugging Face library to download the model:
-```shell
-   python -c "from transformers import PegasusTokenizer, PegasusForConditionalGeneration; PegasusTokenizer.from_pretrained('google/pegasus-xsum'); PegasusForConditionalGeneration.from_pretrained('google/pegasus-xsum')"
+   ```shell
+   python -c "from transformers import PegasusTokenizer, PegasusForConditionalGeneration;       
+   PegasusTokenizer.from_pretrained('google/pegasus-xsum');          
+   PegasusForConditionalGeneration.from_pretrained('google/pegasus-xsum')"
 
 
 
